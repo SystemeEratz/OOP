@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>POO</title>
+  <link rel="stylesheet" href="Styles/prism.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="JS/prism.js"></script>
+  <script src="JS/prism-python.js"></script>
+</head>
+
+<header>
+  <h1><strong>~De la Programmation Orientée Objet (POO)~</strong></h1>
+  <div class="Container">
+    <img id="Neko1Fixed" src="Pictures/neko_1.png" alt="Neko1">
+  </div>
+</header>
+
+<body>
+
+  <div class="POO_GENERAL">
+    <h2>Introduction à la POO</h2>
+    <p>La programmation orientée objet (POO) organise le code autour d'objets, qui combinent
+      données et fonctions. Les classes définissent la structure des objets, spécifiant leurs attributs (données) et
+      leurs méthodes (fonctions). L'encapsulation, principe clé, protège les données en les regroupant avec leurs
+      méthodes dans un même objet, facilitant ainsi la maintenance et la réutilisation du code. L'abstraction masque les
+      détails complexes pour fournir une interface simple à utiliser. L'héritage permet à de nouvelles classes de
+      réutiliser le code et de spécialiser les comportements existants, tandis que le polymorphisme offre une
+      flexibilité en permettant à différents objets de répondre de manière uniforme à des messages similaires,
+      simplifiant ainsi la conception et la maintenance des programmes.</p>
+  </div>
+  <div class="POO_GENERAL">
+    <h2>Lexique de la POO</h2>
+    <p>
+    <ul>
+      <li><strong>Objet :</strong> Une entité regroupant des données et des méthodes pour les manipuler.</li>
+      <li><strong>Classe :</strong> Un modèle définissant la structure et le comportement des objets.</li>
+      <li><strong>Attribut :</strong> Une donnée associée à un objet, définie dans une classe.</li>
+      <li><strong>Méthode :</strong> Une fonction associée à un objet, définie dans une classe.</li>
+      <li><strong>Encapsulation :</strong> Le regroupement des données et des méthodes dans un même objet pour la
+        protection et la modularité du code.</li>
+      <li><strong>Abstraction :</strong> Le masquage des détails d'implémentation pour fournir une interface simple à
+        utiliser.</li>
+      <li><strong>Héritage :</strong> Le mécanisme permettant à une classe de hériter des caractéristiques d'une autre
+        classe.</li>
+      <li><strong>Polymorphisme :</strong> La capacité des objets de différentes classes à répondre de manière
+        uniforme
+        à des messages similaires.</li>
+    </ul>
+    </p>
+  </div>
+  <div class="POO_GENERAL">
+    <h2>Exemples de POO</h2>
+    <pre><code class="language-python">
+      class Car:
+          def __init__(self, brand, model, year):
+              self.brand = brand
+              self.model = model
+              self.year = year
+              self.miles = 0
+
+          def drive(self, miles):
+              self.miles += miles
+              print(f"The {self.year} {self.brand} {self.model} has driven {self.miles} miles.")
+
+          def display_info(self):
+              print(f"Brand: {self.brand}, Model: {self.model}, Year: {self.year}, Miles: {self.miles}")
+
+
+      # Création d'une instance de la classe Car
+      my_car = Car("Toyota", "Corolla", 2020)
+
+      # Appel de la méthode drive pour parcourir 100 miles
+      my_car.drive(100)
+
+      # Affichage des informations de la voiture
+      my_car.display_info()
+    </code></pre>
+    <p>Dans cet exemple :
+      La classe Car est définie avec un constructeur __init__ qui initialise les attributs de la voiture : marque
+      (brand), modèle (model), année (year) et kilométrage (miles).
+      La méthode drive simule la conduite de la voiture en augmentant le kilométrage (miles) et affiche le nombre total
+      de miles parcourus.
+      La méthode display_info affiche les informations de la voiture.
+      Une instance my_car de la classe Car est créée avec la marque "Toyota", le modèle "Corolla" et l'année 2020.
+      La méthode drive est appelée pour simuler la conduite de la voiture de 100 miles.
+      Les informations de la voiture sont ensuite affichées à l'aide de la méthode display_info.</p>
+  </div>
+  <div class="POO_GENERAL">"
+    <h2>Ressources</h2>
+    <ul>
+      <li><strong>Cours : </strong><a
+          href="https://www.monlyceenumerique.fr/nsi_terminale/sd/sd2_programmation_objet.html">Cours sur la
+          programmation orientée objet</a></li>
+      <li><strong>Logiciel : </strong><a href="https://processing.org/download">Téléchargement de processing</a></li>
+      <li><strong>Documentation: </strong><a href="https://pixees.fr/informatiquelycee/procObj_a1.html">Tout savoir à
+          propos de
+          processing</a></li>
+      <li><strong>la POO en bref: </strong><a
+          href="https://blog.hubspot.fr/website/programmation-orientee-objet#:~:text=La%20programmation%20orient%C3%A9e%20objet%2C%20ou,des%20instances%20individuelles%20d'objets.">Résumé
+          sur la programmation orientée objet</a></li>
+      <li><strong>Vidéo : </strong><a href="https://www.youtube.com/watch?v=roOm1j-ZpMU&pp=ygUEUE9PIA%3D%3D">Vidéo
+          sur la programmation orientée objet</a></li>
+
+
+
+
+    </ul>
+  </div>
+</body>
+<footer>
+  <div class="POO_GENERAL">
+    <h2>©️ Gauthier 2024</h2>
+  </div>
+  </br>
+</footer>
+
+</html>

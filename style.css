@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('Fonts/AlexBrush.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CodeFont';
+  src: url(Fonts/SourceCodePro.ttf) format('truetype');
+}
+
+html {
+  cursor: url('Pictures/cursor_neko.png'), auto;
+  font-family: 'CustomFont', Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #FFCFFF;
+}
+
+h1 {
+  text-align: center;
+  color: #7E008D;
+  size: 150%;
+}
+
+#Neko1Fixed {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  width: 12%;
+  height: auto;
+}
+
+.POO_GENERAL {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.POO_GENERAL h2 {
+  color: #62FFCF;
+  margin-bottom: 10px;
+}
+
+.POO_GENERAL p {
+  color: #7E008D;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.POO_GENERAL ul {
+  list-style-type: none;
+  color: #7E008D;
+  margin-top: 0px;
+}
+
+.POO_GENERAL ul li::before {
+  content: "✨";
+  margin-right: 0.5em;
+}
+
+pre {
+  font-family: 'CodeFont';
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow: auto;
+  max-height: 200px;
+  max-width: 600px;
+  background-color: #25003F;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
